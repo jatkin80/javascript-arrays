@@ -12,13 +12,13 @@ Note:
 
 */
 
-function getVowels(){
-  const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
-  let vowels
+function getVowels() {
+    const alphabet = ["a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z"]
+    let vowels = ["a", "e", "i", "o", "u", "y"]
 
-  // Your code here
+    // Your code here
 
-  return vowels
+    return vowels
 }
 
 module.exports = getVowels
