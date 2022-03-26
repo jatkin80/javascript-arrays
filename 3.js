@@ -10,15 +10,24 @@ Given an array containing the alphanumeric alphabet, write code that returns an 
 */
 
 function getSpanishAlphabet() {
-    const alphaNumericAlphabet = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "&"]
+    const alphaNumericAlphabet = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l", "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "&"]];
 
-    let spanishAlphabet = alphaNumericAlphabet.slice(10, 36);
-    spanishAlphabet = [...spanishAlphabet.slice(0, 3), 'ch', ...spanishAlphabet.slice(3, 12), 'll', ...spanishAlphabet.slice(12, 14), 'ñ', ...spanishAlphabet.slice(14, 26)];
+let spanishAlphabet = alphaNumericAlphabet.slice(10, 36);
 
-    // Your code here
+spanishAlphabet = [
+    ...spanishAlphabet.slice(0, 3),
+    "ch",
+    ...spanishAlphabet.slice(3, 12),
+    "ll",
+    ...spanishAlphabet.slice(12, 14),
+    "ñ",
+    ...spanishAlphabet.slice(14, 26),
+];
+// Your code here
 
-    return spanishAlphabet;
+return spanishAlphabet;
 }
+module.exports = getSpanishAlphabet;
 module.exports = getSpanishAlphabet;
 
 /*
